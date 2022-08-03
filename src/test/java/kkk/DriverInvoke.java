@@ -1,3 +1,4 @@
+package kkk;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -10,9 +11,8 @@ public class DriverInvoke {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://opensource-demo.orangehrmlive.com/");
+		driver.get("https://opensource-demo.orangehrmlive");
 		//System.out.println(driver.getTitle());
 		
 	}
-
 }
