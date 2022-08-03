@@ -1,4 +1,5 @@
 package kkk;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -11,8 +12,10 @@ public class DriverInvoke {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://opensource-demo.orangehrmlive");
+		driver.get("https://opensource-demo.orangehrmlive.com/");
+		driver.findElement(By.className("ddnbbdend")).click();
 		//System.out.println(driver.getTitle());
 		
 	}
+
 }
